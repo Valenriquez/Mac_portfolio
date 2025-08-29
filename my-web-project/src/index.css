@@ -1,0 +1,17 @@
+/* In your global CSS file */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.slick-prev:before,
+.slick-next:before {
+  @apply text-indigo-600; /* Use your theme color */
+}
+
+.slick-dots li button:before {
+  @apply text-indigo-600;
+}
+
+.slick-dots li.slick-active button:before {
+  @apply text-indigo-600 opacity-100;
+}
